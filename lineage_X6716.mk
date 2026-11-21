@@ -8,8 +8,8 @@ $(call inherit-product, device/infinix/Infinix-X6716/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_Infinix-X6716
-PRODUCT_DEVICE := Infinix-X6716
+PRODUCT_NAME := lineage_X6716
+PRODUCT_DEVICE := X6716
 PRODUCT_MANUFACTURER := INFINIX
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix X6716
