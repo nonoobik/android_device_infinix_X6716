@@ -1,4 +1,4 @@
-DEVICE_PATH := device/infinix/Infinix-X6716
+DEVICE_PATH := device/infinix/X6716
 
 # Architecture
 TARGET_ARCH := arm64
@@ -110,4 +110,4 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Inherit vendor
-include vendor/infinix/Infinix-X6716/BoardConfigVendor.mk
+include vendor/infinix/X6716/BoardConfigVendor.mk
