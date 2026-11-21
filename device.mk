@@ -1,4 +1,4 @@
-LOCAL_PATH := device/infinix/Infinix-X6716
+LOCAL_PATH := device/infinix/X6716
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -120,4 +120,4 @@ DEVICE_MATRIX_FILE += $(LOCAL_PATH)/vintf/compatibility_matrix.xml
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Inherit vendor
-$(call inherit-product, vendor/infinix/Infinix-X6716/Infinix-X6716-vendor.mk)
+$(call inherit-product, vendor/infinix/X6716/Infinix-X6716-vendor.mk)
