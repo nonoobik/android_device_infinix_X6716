@@ -23,8 +23,6 @@ PRODUCT_PACKAGES += \
 
 # Boot & Recovery
 PRODUCT_PACKAGES += \
-    bootctrl.mt6768 \
-    bootctrl.mt6768.recovery \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
@@ -46,7 +44,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1-service-mediatek \
     libbluetooth_audio_session
 
 # Media & Codecs
@@ -61,10 +58,7 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy \
-    hostapd \
-    wpa_supplicant \
-    libwifi-hal-wrapper
+    android.hardware.wifi@1.0-service-lazy
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi/)
@@ -89,16 +83,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service \
-    android.hardware.lights-service.mediatek \
-    android.hardware.sensors@2.0-subhal-impl-1.0 \
-    android.hardware.usb@1.2-service-mediatekv2 \
-    android.hardware.vibrator-service.mediatek \
     libnl
 
 # Display / Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.memtrack-service.mediatek-mali \
     libion
 
 # Rootdir (fstab, ueventd, recovery usb и все init-скрипты)
