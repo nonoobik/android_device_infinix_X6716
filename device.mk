@@ -101,9 +101,9 @@ PRODUCT_COPY_FILES += \
     $(foreach file,$(wildcard $(LOCAL_PATH)/rootdir/etc/*.rc),$(if $(filter ueventd.rc init.recovery.usb.rc,$(notdir $(file))),,$(file):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $(file))))
 
 # VINTF
-DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/vintf/manifest.xml
-DEVICE_MANIFEST_FILE += $(wildcard $(LOCAL_PATH)/vintf/manifest/*.xml)
-DEVICE_MATRIX_FILE += $(LOCAL_PATH)/vintf/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/manifest.xml
+DEVICE_MANIFEST_FILE += $(wildcard $(DEVICE_PATH)/vintf/manifest/*.xml)
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/vintf/compatibility_matrix.xml
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
