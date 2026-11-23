@@ -113,5 +113,7 @@ BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Inherit vendor
 include vendor/infinix/X6716/BoardConfigVendor.mk
