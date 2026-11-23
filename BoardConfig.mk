@@ -110,6 +110,7 @@ BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 BOARD_HOSTAPD_DRIVER := NL80211
 
 # SELinux
+BOARD_SEPOLICY_VERS := 33.0
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
